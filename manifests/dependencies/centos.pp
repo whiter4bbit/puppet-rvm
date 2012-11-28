@@ -3,6 +3,7 @@ class rvm::dependencies::centos {
   if ! defined(Package['which'])           { package { 'which':           ensure => installed } }
   if ! defined(Package['gcc'])             { package { 'gcc':             ensure => installed } }
   if ! defined(Package['gcc-c++'])         { package { 'gcc-c++':         ensure => installed } }
+  if ! defined(Package['automake'])        { package { 'automake':        ensure => installed } }
   if ! defined(Package['make'])            { package { 'make':            ensure => installed } }
   if ! defined(Package['gettext-devel'])   { package { 'gettext-devel':   ensure => installed } }
   if ! defined(Package['expat-devel'])     { package { 'expat-devel':     ensure => installed } }
